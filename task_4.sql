@@ -1,7 +1,7 @@
 -- task_4.sql
--- This script prints the full description of the 'Books' table
+-- This script prints the full description of the 'books' table
 -- from the 'alx_book_store' database
--- You are not allowed to use DESCRIBE or EXPLAIN statements
+-- DESCRIBE and EXPLAIN statements are not allowed
 
 SELECT
     COLUMN_NAME,
@@ -12,4 +12,4 @@ SELECT
     EXTRA
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = 'alx_book_store'
-  AND TABLE_NAME = 'Books';
+  AND TABLE_NAME = 'books';
